@@ -1,0 +1,37 @@
+<div class="product-details">
+    <h2 class="product-heading">Producto</h2>
+    <hr class="section-divider" />
+    <table class="product-table">
+        <thead>
+            <tr>
+                <td>Producto</td>
+                <td>Descripción</td>
+                <td>Precio</td>
+                <td>Código</td>
+                <td>Stock</td>
+                <td>Categoría</td>
+                {{#if this.userAdminControl}}
+                <td>Acciones</td>
+                {{/if}}
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{this.product.title}}</td>
+                <td>{{this.product.description}}</td>
+                <td>{{this.product.price}}</td>
+                <td>{{this.product.code}}</td>
+                <td>{{this.product.stock}}</td>
+                <td>{{this.product.category}}</td>
+                {{#if this.userAdminControl}}
+                <td>
+                    <button class="add-to-cart-btn" data-cart-id="{{this.cartID}}" data-product-id="{{this.product._id}}">Agregar al
+                        carrito</button>
+                </td>
+                {{/if}}
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="/js/addProductCart.js"></script>

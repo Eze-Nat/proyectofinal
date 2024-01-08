@@ -1,0 +1,40 @@
+<div class="admin-users-view">
+    <h2 class="admin-users-heading">Página de vista de Usuarios para el Admin</h2>
+    <hr class="section-divider">
+    <table id="userTable" class="user-table">
+        <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Email</td>
+                <td>Status</td>
+                <td>Rol Actual</td>
+                <td>Acciones</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each filteredUsers}}
+            <tr>
+                <td>{{this.first_name}}</td>
+                <td>{{this.last_name}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.status}}</td>
+                <td>{{this.role}}</td>
+                <td>
+                    <select id="roleSelect-{{this._id}}">
+                        <option value="usuario">Usuario</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                    <button
+                        onclick="changeUserRole('{{this._id}}', document.getElementById('roleSelect-{{this._id}}').value)">Cambiar
+                        Rol</button>
+                    <button onclick="deleteUser('{{this._id}}')">Eliminar</button>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/users.js"></script>

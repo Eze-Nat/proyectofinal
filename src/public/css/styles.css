@@ -1,0 +1,585 @@
+.main-nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-nav a:hover {
+    color: #ffd700; /* Change the color on hover as desired */
+}
+
+.nav-divider {
+    color: #fff; /* Change the color of the divider as desired */
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-btn,
+.forgot-password-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.register-btn:hover,
+.forgot-password-btn:hover {
+    background-color: #555;
+}
+
+.github-login a {
+    color: #333;
+    text-decoration: none;
+}
+
+.github-login a:hover {
+    color: #555;
+}
+
+/* Add styles for the shopping cart page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+#cartInfo,
+#cartProducts,
+#purchaseResults {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h4 {
+    color: #333;
+}
+
+.product-item {
+    margin-bottom: 10px;
+}
+
+#purchaseBtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#purchaseBtn:hover {
+    background-color: #555;
+}
+
+.ticket {
+    display: none;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Add styles for the chat page */
+
+.chat-heading {
+    color: #333;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#user {
+    font-weight: bold;
+}
+
+.chat-input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.message-logs {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 300px; /* Adjust as needed */
+}
+
+/* Add styles for the reset password page */
+
+.reset-password-heading {
+    color: #333;
+    text-align: center;
+}
+
+.section-divider {
+    margin: 20px 0;
+}
+
+.reset-password-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset-password-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-btn,
+.register-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #555;
+}
+
+/* Add styles for the products page */
+
+.section-divider {
+    margin: 20px 0;
+}
+
+.welcome-message {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-heading {
+    color: #333;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.products-table th,
+.products-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.view-product-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.view-product-link:hover {
+    color: #555;
+}
+
+.pagination-links {
+    margin-top: 20px;
+}
+
+.pagination-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.pagination-link:hover {
+    background-color: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.success-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.success-heading {
+    color: #333;
+}
+
+.purchased-products {
+    margin-top: 20px;
+}
+
+.purchased-products h4 {
+    color: #333;
+}
+
+/* Add styles for the product details page */
+
+.product-details {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-heading {
+    color: #333;
+}
+
+.section-divider {
+    margin: 20px 0;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #555;
+}
+
+/* Add styles for the user profile page */
+
+.user-profile {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-nav {
+    margin-bottom: 20px;
+}
+
+.user-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.profile-heading {
+    color: #333;
+}
+
+.user-info {
+    margin-bottom: 10px;
+}
+
+.logout-form {
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #555;
+}
+
+/* Add styles for the real-time products page */
+
+.real-time-products-heading {
+    color: #333;
+}
+
+.section-divider {
+    margin: 20px 0;
+}
+
+.create-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.create-form label,
+.create-form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.create-product-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.create-product-btn:hover {
+    background-color: #555;
+}
+
+.real-products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.real-products-table th,
+.real-products-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.delete-product-btn {
+    background-color: #c00;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-product-btn:hover {
+    background-color: #d00;
+}
+/* Add styles for the registration form */
+
+.registration-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-heading {
+    color: #333;
+}
+
+.registration-form label,
+.registration-form input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.register-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #555;
+}
+
+/* Add styles for the registration success page */
+
+.success-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.success-heading {
+    color: #333;
+}
+
+.success-message {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Add styles for the reset password page */
+
+.reset-password-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reset-password-heading {
+    color: #333;
+}
+
+.section-divider {
+    margin: 20px 0;
+}
+
+.reset-password-form {
+    margin-top: 20px;
+}
+
+.login-btn,
+.register-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    background-color: #555;
+}
+
+/* Add styles for the admin users view page */
+
+.admin-users-view {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-users-heading {
+    color: #333;
+}
+
+.section-divider {
+    margin: 20px 0;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+.ticket {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+}

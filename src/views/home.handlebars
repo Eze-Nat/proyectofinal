@@ -1,0 +1,45 @@
+<hr class="section-divider">
+
+<div class="welcome-message">
+    <p>Bienvenido/a, {{userInfo.first_name}}. Su rol es: {{userInfo.role}} </p>
+</div>
+
+<hr class="section-divider">
+
+<h2 class="products-heading">Productos</h2>
+
+<table class="products-table">
+    <thead>
+        <tr>
+            <td>Producto</td>
+            <td>Descripción</td>
+            <td>Precio</td>
+            <td>Código</td>
+            <td>Stock</td>
+            <td>Categoria</td>
+            <td>Ver</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each docs}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.price}}</td>
+            <td>{{this.code}}</td>
+            <td>{{this.stock}}</td>
+            <td>{{this.category}}</td>
+            <td><a href="/products/{{this._id}}" class="view-product-link">Ver</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+<div class="pagination-links">
+    {{#if hasPrevPage}}
+        <a href="{{ prevLink }}" class="pagination-link">Anterior</a>
+    {{/if}}
+    {{#if hasNextPage}}
+        <a href="{{ nextLink }}" class="pagination-link">Siguiente</a>
+    {{/if}}
+</div>

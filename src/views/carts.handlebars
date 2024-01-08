@@ -1,0 +1,29 @@
+<div id="cartInfo">
+    <span id="cartId">ID del Carrito :  {{cid}}</span>
+</div>
+
+<div id="cartProducts">
+    <ul>
+        <h4>Productos agregados al carrito</h4>
+        </br>
+        {{#each products}}
+        <li class="product-item">
+            ID del producto: {{this.product}} - Cantidad: {{this.quantity}}
+        </li>
+        {{/each}}
+    </ul>
+</div>
+
+{{#if products.length}}
+    <button id="purchaseBtn" class="cart-btn" data-cart-id="{{cid}}" data-mail-user="{{mailUser}}">Finalizar Compra</button>
+{{/if}}
+
+<div id="purchaseResults" class="ticket" style="display: none;">
+    <h4>Productos Comprados</h4>
+    <ul id="purchasedProducts" class="product-list"></ul>
+    <h4>Productos No Comprados</h4>
+    <ul id="notPurchasedProducts" class="product-list"></ul>
+</div>
+
+
+<script type="module" src="/js/cartPurchase.js"></script>

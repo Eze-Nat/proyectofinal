@@ -1,0 +1,15 @@
+<h2 class="chat-heading">Chat</h2>
+
+<div class="chat-container">
+    <span id="user"></span>
+    {{#if this.email}}
+        <input type="text" id="chatbox" class="chat-input" placeholder="Mensaje" />
+    {{/if}}
+</div>
+
+<div id="messagesLogs" class="message-logs"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>
